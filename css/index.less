@@ -1,0 +1,489 @@
+  //top
+  .null{
+    height: 80px;
+  }
+  .top{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    .top-left{
+      float: left;
+      >img{
+        height: 61px;
+        width: 54px;
+        vertical-align: middle;
+      }
+      >span{
+        height: 80px;
+        line-height: 80px;
+        display: inline-block;
+        margin-left: 19px;
+        color: #714bd6;
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+    .top-right{
+      float: right;
+      >ul{
+        li{
+          position: relative;
+          float: left;
+          >a{font-size: 16px;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            line-height: 80px;
+          }
+          &::before{
+            content: "";
+            display: block;
+            height: 20px;
+            width: 2px;
+            background-color: #000;
+            position: absolute;
+            left: 0px;
+            top: 29px;
+          }
+        }
+
+        .doctorEWM{
+          position: relative;
+          >a{
+            vertical-align: middle;
+
+            margin-right: 30px;
+          }
+          img{
+            height: 16px;
+            width: 16px;
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 31px;
+          }
+          &::after{
+            content: "";
+            display: block;
+            height: 20px;
+            width: 2px;
+            background-color: #000;
+            position: absolute;
+            right: 0;
+            top: 29px;
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+
+  .EWM{
+    z-index: 10;
+    position: relative;
+    display: none;
+    img{
+      height: 130px;
+      width: 130px;
+      position: absolute;
+      top: -10px;
+      right: 80px;
+    }
+
+  }
+
+
+  #fullPage{
+    .first{
+      position: relative;
+      .home-bg{
+        height: 620px;
+        background: url(../images/home-bg.png) no-repeat;
+        background-size: 100% 85%;
+      }
+      .home-bg-size{
+        position: absolute;
+        right:  220px;
+        top: 400px;
+        p{
+          span{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            margin: 5px;
+            color: #ffffff;
+            transition: all 1s;
+            opacity: 0;
+          }
+        }
+      }
+    }
+    //动画一
+    .first.animating{
+      .home-bg-size{
+        p{
+          span{
+            margin: 0;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    //第二部分
+    .second{
+      position: relative;
+      .second-size{
+        font-size: 28px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .second-size1{
+        position: absolute;
+        left: 460px;
+        top: 100px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      >img{
+          display: block;
+          height: 620px;
+          width: 100%;
+          height: 85%;
+      }
+      .second-box{
+        width: 280px;
+        height: 36px;
+        border-radius: 5px;
+        background: #eaca12;
+        color: #5f5f5f;
+        text-align: center;
+        line-height: 36px;
+        position: absolute;
+        top: 1px;
+        left: 50%;
+        margin-left: -140px;
+        font: 15px/36px "微软雅黑";
+        opacity: 0;
+
+
+      }
+    }
+    //second动画
+    .second.animating{
+      .second-box{
+        animation: DH1 2s;
+        animation-fill-mode : forwards;
+      }
+    }
+
+
+    //third部分
+    .third{
+      position: relative;
+      .third-banner{
+        margin-top: 10px;
+        height: 528px;
+        background: url(../images/banner2.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .third-number{
+        height: 75px;
+        width: 555px;
+        position: absolute;
+        left: 400px;
+        top: 225px;
+        .third-number-one{
+          width: 557px;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          left: -2000px;
+          top: -2px;
+          transition: all 1s;
+          opacity: 0;
+        }
+        .third-number-two{
+          width: 2px;
+          height: 77px;
+          background-color: #fff;
+          position: absolute;
+          right: -2px;
+          top: -2000px;
+          transition: all 1s;
+          opacity: 0;
+        }
+        .third-number-three{
+          width: 559px;
+          height: 2px;
+          background-color: #fff;
+          position: absolute;
+          left: 2000px;
+          bottom: -2px;
+          transition: all 1s;
+          opacity: 0;
+        }
+        .third-number-four{
+          width: 2px;
+          height: 79px;
+          background-color: #fff;
+          position: absolute;
+          left: -2px;
+          top: 2000px;
+          transition: all 1s;
+          opacity: 0;
+        }
+      }
+    }
+    //third动画
+    .third.animating{
+        position: relative;
+        .third-number-one{
+          left: -2px;
+          top: -2px;
+          opacity: 1;
+        }
+        .third-number-two{
+          right: -2px;
+          top: -2px;
+          opacity: 1;
+        }
+        .third-number-three{
+          left: -2px;
+          bottom: -2px;
+          opacity: 1;
+        }
+        .third-number-four{
+          left: -2px;
+          top: -2px;
+          opacity: 1;
+        }
+    }
+
+
+    //fourth部分
+
+    .fourth{
+      position: relative;
+      #content {
+        height: 630px;
+        margin:0 auto;
+        background: url('../images/case1-bg.png') no-repeat;
+        height: 520px;
+        background-size: 100% 100%;
+        position: relative;
+        .canvas-xz{
+          z-index: 2;
+          position: absolute;
+          width: 190px;
+          height: 395px;
+          left: 280px;
+          top: 20px;
+        }
+      }
+
+      .fourth-size{
+        position: absolute;
+        right: 290px;
+        bottom: 100px;
+        .fourth-size-p1{
+          color: #714bd6;
+          font-size: 36px;
+          font-family: inherit;
+          font-weight: 600;
+          line-height: 1.1;
+          margin: 10px;
+        }
+        .fourth-size-p2{
+          font-size: 17px;
+          font-family: sans-serif;
+          line-height: 1.42857143;
+          color: #333;
+          font-weight: 600;
+          margin: 10px;
+        }
+      }
+    }
+    //fifth部分
+    .fifth{
+      position: relative;
+      .fifth-img{
+        height: 620px;
+        background: url(../images/case2-bg.png) no-repeat;
+        background-size: 100% 85%;
+        .fifth-size{
+          position: absolute;
+          left: 70%;
+          top: 250px;
+          margin-left: -50px;
+          .fifth-size-p1{
+            color: #714bd6;
+            font-size: 36px;
+            font-family: inherit;
+            font-weight: 600;
+            line-height: 1.1;
+            margin: 10px;
+          }
+          .fifth-size-p2{
+            font-size: 17px;
+            font-family: sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            font-weight: 600;
+            margin: 10px;
+          }
+        }
+        >img{
+          position: absolute;
+          left: 48%;
+          top: 10px;
+        }
+      }
+    }
+
+
+    .six {
+      position: relative;
+      .six-img {
+        height: 620px;
+        background: url(../images/case3-bg.png) no-repeat;
+        background-size: 100% 85%;
+        .six-size {
+          position: absolute;
+          left: 48%;
+          top: 65px;
+          margin-left: -50px;
+          .six-size-p1 {
+            color: #714bd6;
+            font-size: 36px;
+            font-family: inherit;
+            font-weight: 600;
+            line-height: 1.1;
+            margin: 10px;
+          }
+          .six-size-p2 {
+            font-size: 17px;
+            font-family: sans-serif;
+            line-height: 1.42857143;
+            color: #333;
+            font-weight: 600;
+            margin: 10px;
+          }
+        }
+        > img {
+          position: absolute;
+          left: 20%;
+          top: 10px;
+        }
+      }
+    }
+
+
+    .seven{
+      position: relative;
+      .seven-img{
+        text-align: center;
+        height: 620px;
+        background: url(../images/contract-bg.png) no-repeat;
+        background-size: 100% 85%;
+        .seven-size{
+          position: absolute;
+          top: 200px;
+          left: 40%;
+          .seven-size-p1{
+            font-size: 28px;
+            color: #ffffff;
+            margin: 15px;
+          }
+          .seven-size-p2{
+            position: relative;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 15px;
+          }
+          .address{
+            &::before{
+              height: 21px;
+              width: 17px;
+              content: "";
+              background: url(../images/location.png);
+              position: absolute;
+              top: 0;
+              left: 60px;
+            }
+          }
+          .phone{
+            &::before{
+              z-index: 2;
+              content: "";
+              height: 16px;
+              width: 20px;
+              background: url(../images/tel.png);
+              position: absolute;
+              top: 0;
+              left: 95px;
+            }
+          }
+        }
+        .seven-size-bottom{
+          position: absolute;
+          bottom: 150px;
+          left: 36%;
+          .seven-size-bottom-1{
+            color: #ffffff;
+            font-size: 12px;
+            font-family: sans-serif;
+          }
+        }
+
+      }
+
+    }
+  }
+
+
+//第二部分动画
+  @keyframes DH1 {
+    0%{transform: translate(0,0)}
+    5%{
+      transform: translate(0,20px);
+      opacity: 0.2;
+    }
+    50%{
+      transform: translate(0,250px);
+      opacity: 0.5;
+    }
+    60%{
+      transform: translate(0,190px);
+      opacity: 0.6;
+    }
+    70%{
+      transform: translate(0,250px);
+      opacity: 0.7;
+    }
+    80%{
+      transform: translate(0,220px);
+      opacity: 0.8;
+    }
+    90%{
+      transform: translate(0,250px);
+      opacity: 0.9;
+    }
+    95%{
+      transform: translate(0,240px);
+      opacity: 0.95;
+    }
+    100%{
+      transform: translate(0,250px);
+      opacity: 1;
+    }
+  }

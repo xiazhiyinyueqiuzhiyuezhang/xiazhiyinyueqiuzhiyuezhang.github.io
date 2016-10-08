@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>驭美客--北京颜尚医美科技有限公司</title>
+    <meta name="keywords" content="医疗美容 互联网医疗 整形 美容 病历 随访 病程"/>
+    <meta name="description" content="驭美客致力于搭建医生与患者沟通交流平台，医患双方可以方便地通过在线图文咨询等方式直接进行沟通，并可获得医生术前、术后个性化随访方案，同时实现个人美丽档案、配药服务等个性化功能。通过驭美客，医生能够更有效地管理患者客群、沉淀个人品牌；患者也免除了不必要的上门随诊的烦恼。"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="icon" href="logo.png"/>
+    <base target="_blank">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/yumeike.js"></script>
+    <script src="js/yumeike2.js"></script>
+    <script>
+        $(function() {
+            $('#fullPage').fullpage({
+                "afterLoad": function(anchorLink, index) {
+                    // index 从1开始
+                    // 清除其他的
+                    $(".section").removeClass("animating");
+                    // $('.section').eq(index-1).addClass("animating");
+                    setTimeout(function() {
+                        $('.section').eq(index - 1).addClass("animating");
+                    }, 50);
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="null"></div>
+    <div class="top banxin clearfix">
+        <div class="top-left">
+            <img src="logo.png" alt=""/>
+            <span>驭美客</span>
+        </div>
+        <div class="top-right">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">病历上传</a></li>
+                <li><a href="#">产品介绍</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Android</a></li>
+                <li class="doctorEWM"><a href="#">二维码 <img src="images/doctorEWM.jpg.png" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="EWM">
+        <img src="images/doctorEWM.jpg.png" alt=""/>
+    </div>        
+
+
+
+
+
+    <div id="fullPage">
+        <!-- 区域1 -->
+        <div class="section first">
+            <div class="home-bg"></div>
+            <div class="home-bg-size">
+                <p>
+                    <span>高</span>
+                    <span>效</span>
+                    <span>专</span>
+                    <span>业</span>
+                    <span>的</span>
+                    <span>医</span>
+                    <span>疗</span>
+                    <span>美</span>
+                    <span>容</span>
+                    <span>执</span>
+                    <span>业</span>
+                    <span>工</span>
+                    <span>具</span>
+
+                </p>
+                <p>
+                    <span>资</span>
+                    <span>深</span>
+                    <span>整</span>
+                    <span>形</span>
+                    <span>医</span>
+                    <span>生</span>
+                    <span>联</span>
+                    <span>合</span>
+                    <span>设</span>
+                    <span>计</span>
+                    <span>开</span>
+                    <span>发</span>
+                </p>
+            </div>
+
+
+        </div>
+        <!-- 区域2 -->
+        <div class="section second banxin">
+            <div class="second-size">上传病例</div>
+            <div class="second-size1">点击下方上传按钮, 上传病历到APP</div>
+            <img src="images/upload-intro.png"/>
+            <a href="#">
+                <div class="second-box">
+                    上 传 病 例
+                </div>
+            </a>
+
+
+        </div>
+        <!-- 区域3 -->
+        <div class="section third">
+            <div class="third-banner"></div>
+            <div class="third-number">
+                <div class="third-number-one"></div>
+                <div class="third-number-two"></div>
+                <div class="third-number-three"></div>
+                <div class="third-number-four"></div>
+            </div>
+
+        </div>
+        <!-- 区域4 -->
+        <div class="section fourth">
+            <div id="content">
+                <div class="canvas-xz">
+                    <img src="images/case1-1.png" >
+                </div>
+                <div class="fourth-size">
+                    <p class="fourth-size-p1">病历管理</p>
+                    <p class="fourth-size-p2">照片安全无限量存储、管理、筛查、展示</p>
+                    <p class="fourth-size-p2">快捷病历记录</p>
+                    <p class="fourth-size-p2">提升门诊下单率</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 区域5 -->
+        <div class="section fifth">
+            <div class="fifth-img">
+                <img src="images/case20.png" alt=""/>
+                <div class="fifth-size">
+                    <p class="fifth-size-p1">医患沟通</p>
+                    <p class="fifth-size-p2">自动随访提醒</p>
+                    <p class="fifth-size-p2">完善患教模板</p>
+                    <p class="fifth-size-p2">保护医生隐私(APP通讯方式,避免微信、手机泄露)</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 区域6 -->
+        <div class="section six">
+            <div class="six-img">
+                <img src="images/case3.png" alt=""/>
+                <div class="six-size">
+                    <p class="six-size-p1">团队协作</p>
+                    <p class="six-size-p2">医学团队协作</p>
+                    <p class="six-size-p2">管理病例、采集资料、商讨方案、分享经验</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- 区域7 -->
+        <div class="section seven">
+            <div class="seven-img">
+                <div class="seven-size">
+                    <p class="seven-size-p1">联系我们</p>
+                    <p class="seven-size-p1">北京颜尚医美科技有限公司</p>
+                    <p class="seven-size-p2 address">北京市北辰世纪中心A座302</p>
+                    <p class="seven-size-p2 phone">010-56208833</p>
+                </div>
+                <div class="seven-size-bottom">
+                    <p class="seven-size-bottom-1">Copyright ⓒ 2016-2020驭美客版权所有</p>
+                    <p class="seven-size-bottom-1">高效专业的医疗美容执业工具 - 北京颜尚医美科技有限公司 ⓒ 版权所有 京ICP备16007104号</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    window.onload=function(){
+        var w = 800,
+                h = 550;undefined
+        animate({
+            target: '#content',
+            canvasWidth: w,
+            canvasHeight: h,
+            speed: 1,
+            data: {
+                position: {
+                    x: w / 2,
+                    y: h / 2
+                },
+                skills: [{
+                    radius: 120,
+                    child: []
+                }, {
+                    radius: 215,
+                    child: [{
+                        title: '安 全',
+                        font: 12,
+                        angle: 0,
+                        radius: 38,
+                        border: 22,
+                        borderColor: 'rgba(228, 52, 106, .1)',
+                        fillColor: 'rgba(228, 52, 106, .7)',
+                        position: {
+                            x: 0,
+                            y: 0
+                        }
+                    }, {
+                        title: '存 储',
+                        font: 12,
+                        angle: 72,
+                        radius: 35,
+                        border: 22,
+                        borderColor: 'rgba(233, 240, 29, .1)',
+                        fillColor: 'rgba(233, 240, 29, .7)',
+                        position: {
+                            x: 0,
+                            y: 0
+                        }
+                    }, {
+                        title: '管 理',
+                        font: 12,
+                        angle: 144,
+                        radius: 43,
+                        border: 22,
+                        borderColor: 'rgba(49, 141, 255, .1)',
+                        fillColor: 'rgba(49, 141, 255, .7)',
+                        position: {
+                            x: 0,
+                            y: 0
+                        }
+                    }, {
+                        title: '筛 查',
+                        font: 12,
+                        angle: 216,
+                        radius: 45,
+                        border: 22,
+                        borderColor: 'rgba((77, 161, 189, .1)',
+                        fillColor: 'rgba(77, 161, 189, .7)',
+                        position: {
+                            x: 0,
+                            y: 0
+                        }
+                    }, {
+                        title: '展 示',
+                        font: 12,
+                        radius: 40,
+                        angle: 288,
+                        border: 22,
+                        borderColor: 'rgba(207, 39, 130, .1)',
+                        fillColor: 'rgba(207, 39, 130, 1)',
+                        position: {
+                            x: 0,
+                            y: 0
+                        }
+                    }]
+                }]
+            }
+        }).render();
+    }
+</script>
+</html>
